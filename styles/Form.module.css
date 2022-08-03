@@ -1,0 +1,88 @@
+
+.preEdited {
+  width: clamp(10rem, 15rem, 20rem);
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  background-color: black;
+  color: white;
+  font-size: clamp(0.6rem, 1rem, 1.6rem);
+}
+
+.explanationBox {
+  width: clamp(10rem, 15rem, 20rem);
+  font-size: clamp(0.6rem, 1rem, 1.6rem);
+}
+
+.formLabel {
+    display: block;
+    margin: 1px;
+    padding: 1px;
+    display: inline-block;
+    width:  clamp(4rem, 8rem, 12rem);
+    font-size: clamp(0.6rem, 1rem, 1.6rem);
+  }
+
+#formButton {
+  margin: 0.8rem 0rem;
+  width: clamp(5rem, 15rem, 18rem);  
+  height: clamp(1rem, 1.5rem, 3rem);
+  border: none;
+  background-color: rgb(144, 95, 193);
+  color: white;
+  padding: 0.2rem 0rem;
+  font-size: clamp(0.6rem, 1rem, 1.6rem);
+}
+
+#parentList  {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+#url_input:invalid {
+    background-color: lightpink;
+}
+
+#email_input:invalid {
+  background-color: lightpink;
+}
+
+#url_input:valid {
+  background-color: rgb(212, 212, 218);
+}
+
+#email_input:valid {
+  background-color: lightskyblue;
+}
+
+#url_input {
+  width: clamp(5rem, 15rem, 18rem);  
+  height: clamp(1rem, 1.5rem, 3rem); 
+  border: none;
+  color: black;
+}
+
+#email_input {
+  width: clamp(5rem, 15rem, 18rem);  
+  height: clamp(1rem, 1.5rem, 3rem); 
+  border: none;
+  color: black;
+}
+
+#url_input::placeholder {
+  color: rgb(38, 36, 64);
+  font-size: clamp(0.6rem, 1rem, 1.6rem);
+}
+
+#email_input::placeholder {
+  color: rgb(38, 36, 64);
+  font-size: clamp(0.6rem, 1rem, 1.6rem);
+}
+
+
+  
+  /* form:invalid {
+    border: 5px solid #ffdddd;
+  } */
+
+ 

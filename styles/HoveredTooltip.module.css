@@ -1,0 +1,15 @@
+.hoveredButton {
+    width: clamp(23rem,23rem,23rem);
+    height: clamp(7rem,7rem,7rem);
+    font-size: clamp(2rem, 2rem, 2rem);
+    cursor: pointer;
+    background-color: rgb(251, 173, 173);
+    border: none;
+    color: white;
+    border-radius: clamp(0.5rem, 0.5rem, 0.5rem);
+}
+
+.hoveredButtonSection {
+    height: clamp(15rem,10rem,10rem);
+}
+

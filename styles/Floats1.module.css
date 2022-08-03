@@ -1,0 +1,22 @@
+.boxOfBoxes {
+    grid-column: 1 / 3;
+    width: 100%;
+}
+
+.boxFloatedLeft {
+    float: left;
+    width: 20%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxFloatedRight {
+    float: right;
+    width: 20%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
