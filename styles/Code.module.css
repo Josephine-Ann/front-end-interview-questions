@@ -12,13 +12,10 @@ explanation-item */
   color: white;
   font-size: clamp(0.4rem, 0.8rem, 1.2rem);
 }
-  
-
   .explanationBox {
     width: clamp(5rem, 14rem, 20rem);    
     font-size: clamp(0.4rem, 0.8rem, 1.2rem);  
     padding: 1rem;
-    height: clamp(10rem, 20rem, 25rem);    
   }
 
   @media screen and (min-width: 45rem) {

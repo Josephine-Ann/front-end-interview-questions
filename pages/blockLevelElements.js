@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/BlockLevelElements.module.css';
 import Layout from '../Components/Layout';
+import PhotoWrapper from '../Components/PhotoWrapper';
 import Code from '../Components/Code';
 import Image from 'next/image';
 import imgExample from '../public/img_example.png';
@@ -88,13 +89,6 @@ const codeBlockLevelInlineApplied = [
 
 const BlockLevelElements = () => {
 
-    const ImgWrapper = ({children}) => {
-        return (
-            <div className={styles.imgWrapper}>
-                {children}
-            </div>
-        )
-    }
     return (
         <Layout>
             <div className={styles.blockLevelSection}>
@@ -106,9 +100,9 @@ const BlockLevelElements = () => {
             <div>
                 <h1>Inline Elements</h1>
                 <span className={styles.inlineLevelSpan}>I am a span</span>
-                <ImgWrapper>
+                <PhotoWrapper>
                     <Image src={imgExample} alt="dummy image with text explaining that it is an image" layout="fill" />
-                </ImgWrapper>
+                </PhotoWrapper>
             </div>
             <Code explanation={explanationInlineLevel} code={codeInlineLevel}/>
             <div className={`${styles.blockLevelSection} ${styles.inlineSetting}`}>

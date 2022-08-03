@@ -44,6 +44,7 @@ const Navbar = () => {
                     <li onPointerEnter={() => setHoveredItem("blockLevelElements")} onPointerLeave={() => setHoveredItem(null)} className={hoveredItem === "blockLevelElements" || route === "/blockLevelElements" ? styles.navbarLinkActive : styles.navbarLink}><Link href="blockLevelElements">Block Level Elements</Link></li>
                     <li onPointerEnter={() => setHoveredItem("floats1")} onPointerLeave={() => setHoveredItem(null)} className={hoveredItem === "floats1" || route === "/floats1" ? styles.navbarLinkActive : styles.navbarLink}><Link href="floats1">Left and Right Multiple Floats</Link></li>
                     <li onPointerEnter={() => setHoveredItem("floats2")} onPointerLeave={() => setHoveredItem(null)} className={hoveredItem === "floats2" || route === "/floats2" ? styles.navbarLinkActive : styles.navbarLink}><Link href="floats2">Single Floats Left and Right</Link></li>
+                    <li onPointerEnter={() => setHoveredItem("floats3")} onPointerLeave={() => setHoveredItem(null)} className={hoveredItem === "floats3" || route === "/floats3" ? styles.navbarLinkActive : styles.navbarLink}><Link href="floats3">Floats with Text and Photos</Link></li>
                 </ul>
                 </div>
 

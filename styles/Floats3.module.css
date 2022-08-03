@@ -1,0 +1,55 @@
+.sectionsFloats {
+    margin: 2rem 1rem;
+    width: 20rem;
+    height: 30rem;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.floatText {
+    font-size: clamp(0.4rem, 0.8rem, 1.2rem);
+    padding: 0.8rem 0.8rem;
+}
+
+.imgWrapper {
+    width: 12rem;
+    height: 12rem;    
+    position: relative;
+    padding-top: 50%;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.imgWrapperRight {
+    float: right;
+    width: 12rem;
+    height: 12rem;
+    position: relative;
+    padding-top: 50%;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.imgWrapperLeft {
+    float: left;
+    width: 12rem;
+    height: 12rem;
+    position: relative;
+    padding-top: 50%;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.allSections {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.titles {
+    padding: 0.4rem 0.4rem 0rem 0.4rem;
+}
+
+@media screen and (max-width: 65rem) {
+    .allSections {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

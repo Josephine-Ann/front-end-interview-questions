@@ -1,5 +1,21 @@
 @import url('./normalize.css');
 
+@media screen and (min-width: 45rem) {
+  .fa-align-justify {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 44.9rem) {
+    .fa-align-justify {
+      cursor: pointer;
+      font-size: clamp(1.4rem, 3rem, 3.5rem);
+      margin: clamp(0.2rem, 0.4rem, 0.6rem);
+      border: none;
+      background-color: transparent;
+  }
+}
+
 [data-tooltip] {
   position: relative;
 }
