@@ -34,7 +34,10 @@ export default function Home() {
       myself and give potential employers a better idea of how I work. 
     </p>
     <button className={styles.buttonsHome}>
-      <a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions" target="_blank">
+      <a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions" 
+      target="_blank"
+      rel="noopener noreferrer"
+      >
         Check out the repo
       </a>
     </button>
