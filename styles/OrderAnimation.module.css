@@ -1,0 +1,39 @@
+
+.firstBox, .thirdBox {
+    color: white;
+    background-color: rgb(60, 56, 138);
+}
+
+.firstBox {
+    justify-content: center;
+    align-items: center;
+}
+
+.secondBox {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.thirdBox {
+    justify-content: center;
+    align-items: center; 
+}
+
+.animationBoxes {
+    position: relative;
+    top: 0;
+    height: 20rem;
+    display: flex;
+}
+
+.firstInstruction {
+    padding: 0.2rem 0.8rem;
+    font-size: clamp(0.4rem, 0.9rem, 1.2rem);
+}
+
+.secondInstruction {
+    padding: 0.8rem 0.8rem;
+    font-size: clamp(0.4rem, 0.9rem, 1.2rem);
+}
+
+

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Layout from '../Components/Layout';
+// // import cv from "../public/CV_Josephine_Geoghegan.pdf";
 
 export default function Home() {
   return (
@@ -13,6 +14,30 @@ export default function Home() {
       </Head>
   <Layout>
   <main className={styles.main}>
+    <h1>Who am I?</h1>
+    <p>
+      My name is Josephine. 
+      I am looking for new opportunities 
+      as a front end developer.
+    </p>
+    <button className={styles.buttonsHome}>
+      <a href="https://drive.google.com/uc?export=download&id=1Mh8_npdnOG02JJpQobE6_z4VkCb_VtxE" download>
+        Download my CV here
+      </a>
+    </button>
+    <h1>What is this website?</h1>
+    <p>
+      This website is based on a repository
+      of interview questions for front end developers. 
+      I am putting together answers I found online to 
+      some of the questions. This is mostly to teach 
+      myself and give potential employers a better idea of how I work. 
+    </p>
+    <button className={styles.buttonsHome}>
+      <a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions" target="_blank">
+        Check out the repo
+      </a>
+    </button>
   </main>
       <footer style={{display: "hidden"}}>
         <a

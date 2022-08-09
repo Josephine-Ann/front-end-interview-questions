@@ -18,7 +18,7 @@ const Code = ({ explanation, code }) => {
                 {
                     explanation.map((ex, i) => {
                         return (
-                            <p className="explanationItem" key={i}>{ex}</p> 
+                            <p className="explanationItem" key={i}>{i+1}. {ex}</p> 
                         )
                     })
                 }

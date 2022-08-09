@@ -1,9 +1,12 @@
 .navbar {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    justify-content: space-between;
 }
 
 .navbarLinks {
@@ -38,8 +41,19 @@
 }
 
 @media screen and (min-width: 45rem) {
+    .navbarHomeIcon {
+        cursor: pointer;
+        font-size: clamp(1.4rem, 3rem, 3.5rem);
+        margin: 1.5rem 2rem;
+        border: none;
+        background-color: transparent;
+        width: 4rem;
+    }
     .navbarHidden {
         display: none;
+    }
+    .navbarTitleBox {
+        width: 8rem;
     }
     .faAlignJustify {
         display: none;
@@ -56,6 +70,7 @@
     }
     .navbarList {
         position: absolute;
+        width: 7.8rem;
     }
 
 }
@@ -74,12 +89,16 @@
 }
 
 @media screen and (max-width: 44.9rem) {
+    .navbarHomeIcon {
+        display: none;
+    }
     .navbarTitle {
         font-weight: bolder;
     }
     .navbarTitleBox {
         margin: 0rem 1.5rem;
         background-color: rgb(212, 212, 218);
+
     }
     .navbarLinks {
         top: 4rem;

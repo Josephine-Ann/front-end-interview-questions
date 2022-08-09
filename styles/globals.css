@@ -1,5 +1,33 @@
 @import url('./normalize.css');
 
+
+
+.box {
+  display: flex;
+  width: clamp(4rem, 8rem, 14rem);
+  height: 10rem;
+}
+
+.box, .title-animation {
+  animation: dropIn 1s ease forwards;
+  animation-delay: calc(var(--order) * 100ms);
+  transform: translateY(-30rem);
+}
+
+.title-animation {
+  background-color: rgb(34, 32, 77);
+  color: white;
+  padding: clamp(0.5rem, 1.5rem, 2rem);
+  text-align: center;
+  transform: translateY(-30rem);
+  width: 90%;
+}
+
+@keyframes dropIn {
+  from {transform: translateY(-30rem);}
+  to {transform: translateY(5rem);}
+}
+
 @media screen and (min-width: 45rem) {
   .fa-align-justify {
       display: none;
@@ -48,18 +76,6 @@ h5:nth-child(2) {
 
 table.myClass tr.row:nth-child(odd)
 
-
-:root {
-  counter-reset: headings;
-}
-
-.explanationItem {
-  counter-increment: headings;
-}
-
-.explanationItem::before p::before {
-  content: counter(headings) ". ";
-}
 
 
 html,
