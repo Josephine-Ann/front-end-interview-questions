@@ -1,6 +1,6 @@
 const displayName = "The use of order in an animation";
-const codeNameUpperCase = "OrderAnimation";
-const codeNameLowerCase = "orderAnimation";
+const codeNameUpperCase = "JSPrototypalInheritance2";
+const codeNameLowerCase = "jSPrototypalInheritance2";
 
 function createPage () {
     console.log(

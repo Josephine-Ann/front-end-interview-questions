@@ -78,13 +78,13 @@
 .navbarLink {
     font-size: clamp(0.4rem, 0.9rem, 1.2rem);
     background-color: rgb(212, 212, 218);
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.5rem;
 }
 
 .navbarLinkActive {
     font-size: clamp(0.4rem, 0.9rem, 1.2rem);
     background-color: rgb(121, 121, 185);
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.5rem;
 
 }
 
