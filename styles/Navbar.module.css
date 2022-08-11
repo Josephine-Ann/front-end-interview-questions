@@ -116,29 +116,8 @@
     }
     
     .navbarLinksHidden {
-        animation: hideRight 0.5s ease forwards;
-        animation-direction: forwards;
-      }
-      
-      @keyframes hideRight {
-        0%   {transform: translateX(0);}
-        9% {transform: translateX(3rem);}
-        19% {
-            transform: translateX(6rem);
-            opacity: 80%;
-        }
-        39% {transform: translateX(9rem);}
-        59% {
-            transform: translateX(12rem);
-            opacity: 60%;
-        }
-        79% {transform: translateX(15rem);}
-        99% {transform: translateX(18rem);}
-        100% {
-            transform: translateX(18rem);
-            display: none;
-        }
-      }
+        visibility: hidden;
+    }
 
       .navbarLinks {
         top: 0rem;
@@ -154,11 +133,12 @@
 
     @keyframes revealRight {
         0%   {
-            transform: translateX(18);
-            opacity: 0%;
+            transform: translateX(80rem);
+            visibility: hidden;
         }
         9% {
             transform: translateX(15rem);
+            visibility: visible;
             opacity: 30%;
         }
         19% {transform: translateX(12rem);}
