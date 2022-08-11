@@ -20,7 +20,7 @@ const Navbar = () => {
             <button className={styles.navbarHomeIcon}>
                 <Link href="/"><FontAwesomeIcon  icon={faHome} /></Link>
             </button>
-            <div className={menuOpen ? styles.navbarLinks : `${styles.navbarLinks} ${styles.navbarLinksHidden}`}>
+            <div className={menuOpen ? `${styles.navbarLinks} ${styles.navbarLinksRevealed}` : `${styles.navbarLinks} ${styles.navbarLinksHidden}`}>
                 <div onPointerEnter={() => setCssOpen(prev => true)} onPointerLeave={() => setCssOpen(prev => false)}>
                     <div className={styles.navbarTitleBox}>
                         <button className={styles.navbarTitle}>CSS</button>

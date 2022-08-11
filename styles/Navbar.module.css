@@ -103,6 +103,8 @@
         background-color: transparent;
         width: 4rem;
         order: -1;
+        z-index: 1;
+        position: relative;
     }
     .navbarTitle {
         font-weight: bolder;
@@ -112,18 +114,71 @@
         background-color: rgb(212, 212, 218);
 
     }
-    .navbarLinks {
-        top: 5rem;
+    
+    .navbarLinksHidden {
+        animation: hideRight 0.5s ease forwards;
+        animation-direction: forwards;
+      }
+      
+      @keyframes hideRight {
+        0%   {transform: translateX(0);}
+        9% {transform: translateX(3rem);}
+        19% {
+            transform: translateX(6rem);
+            opacity: 80%;
+        }
+        39% {transform: translateX(9rem);}
+        59% {
+            transform: translateX(12rem);
+            opacity: 60%;
+        }
+        79% {transform: translateX(15rem);}
+        99% {transform: translateX(18rem);}
+        100% {
+            transform: translateX(18rem);
+            display: none;
+        }
+      }
+
+      .navbarLinks {
+        top: 0rem;
         right: 0rem;
         position: absolute;
         width: 100%;
     }
-
-    .navbarLinksHidden {
-        display: none;
-    }
     
-    .navbarListRevealed {
+    .navbarLinksRevealed {        
+        animation: revealRight 0.5s ease forwards;
+        animation-direction: forwards;
+    }
+
+    @keyframes revealRight {
+        0%   {
+            transform: translateX(18);
+            opacity: 0%;
+        }
+        9% {
+            transform: translateX(15rem);
+            opacity: 30%;
+        }
+        19% {transform: translateX(12rem);}
+        39% {
+            transform: translateX(9rem);
+            opacity: 60%;
+        }
+        59% {transform: translateX(6rem);}
+        79% {
+            transform: translateX(3rem);
+            opacity: 80%;
+        }
+        99% {transform: translateX(1rem);}
+        100% {
+            transform: translateX(0rem);
+            opacity: 100%;
+        }
+      }
+
+      .navbarListRevealed {
         position: absolute;
         top: clamp(1.4rem, 3rem, 3.5rem);
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -146,6 +201,8 @@
         margin: clamp(0.2rem, 0.4rem, 0.6rem);
         border: none;
         background-color: transparent;
+        z-index: 2;
+        position: relative;
     }
 }
 
