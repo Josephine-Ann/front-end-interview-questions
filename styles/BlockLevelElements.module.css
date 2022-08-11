@@ -41,3 +41,8 @@
 .inlineLevelSpan { 
     background-color: lightpink;
 }
+@media screen and (max-width: 20rem) {
+    .blockLevelH2, .blockLevelP {
+        font-size: 0.9rem;
+    }
+}

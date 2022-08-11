@@ -22,8 +22,10 @@
 .animationBoxes {
     position: relative;
     top: 0;
+    width: 18.5rem;
     height: 20rem;
     display: flex;
+    justify-content: center;
 }
 
 .firstInstruction {
@@ -36,4 +38,8 @@
     font-size: clamp(0.4rem, 0.9rem, 1.2rem);
 }
 
-
+@media screen and (max-width: 20rem) {
+    .firstInstruction, .secondInstruction {
+        font-size: 0.8rem;
+    }
+}

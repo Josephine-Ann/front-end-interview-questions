@@ -17,8 +17,10 @@ const Code = ({ explanation, code }) => {
             <div className={`${styles.explanationBox}`}>
                 {
                     explanation.map((ex, i) => {
-                        return (
+                        return explanation.length > 1 ? (
                             <p className="explanationItem" key={i}>{i+1}. {ex}</p> 
+                        ) : (
+                            <p className="explanationItem" key={i}>{ex}</p>  
                         )
                     })
                 }

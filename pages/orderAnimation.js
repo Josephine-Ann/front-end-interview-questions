@@ -56,19 +56,19 @@ const code = [
 const OrderAnimation = () => {
     return (
         <Layout>
-            <h3 className="title-animation" style={{ "--order": 5}}>The Request-Response Model/Client-Server Architecture</h3>
+            <h3 className={`${styles.titleAnimation} titleAnimation`} style={{ "--order": 5}}>The Request-Response Model/Client-Server Architecture</h3>
             <div className={styles.animationBoxes}>
                 <div style={{ "--order": 1}} className={`${styles.firstBox} box`}>
-                    <p>Client/Browser</p>
+                    <p>Client</p>
                 </div>
                 <div style={{ "--order": 2 }} className={`${styles.secondBox} box`}>
                     <div className={styles.firstInstruction}>
                         <p>→</p>
-                        <p>Client sends request to server</p>
+                        <p>Request</p>
                     </div>
                     <div className={styles.secondInstruction}>
                         <p>←</p>
-                        <p>Server sends back response</p>
+                        <p>Response</p>
                     </div>
                 </div>
                 <div style={{ "--order": 3 }} className={`${styles.thirdBox} box`}>

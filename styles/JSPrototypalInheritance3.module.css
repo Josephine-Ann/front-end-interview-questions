@@ -1,0 +1,21 @@
+.resultBoxes {
+    padding: 1.5rem 1rem;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 0.4rem;
+    margin: 1rem 0.5rem;
+    font-size: clamp(0.4rem, 0.8rem, 1.2rem);
+    white-space: pre-wrap; 
+}
+
+.title {
+    width: 80%;
+    text-align: center;
+}
+
+@media screen and (max-width: 30rem) {
+    .resultBoxes {
+        width: 90%;
+        font-size: 0.7rem;
+    }
+}

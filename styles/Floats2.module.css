@@ -53,4 +53,19 @@
     float: right;
 }
 
-
+@media screen and (max-width: 20rem) {
+    .withoutFloatDemo, .withFloatDemo {
+        width: 14rem;
+    }
+    .childrenWithFloat, .childrenWithoutFloat {
+        width: 6rem;
+        height: 6rem;
+        font-size: 0.8rem;
+    }
+    .divDescription {
+        padding: 1rem 0.8rem;
+    }
+    .sectionFloats {
+        height: 35rem;
+    }
+}

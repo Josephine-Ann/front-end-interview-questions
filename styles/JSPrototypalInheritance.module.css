@@ -1,0 +1,35 @@
+.resultBoxes {
+    padding: 1.5rem 1rem;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 0.4rem;
+    margin: 1rem 0.5rem;
+    font-size: clamp(0.4rem, 0.8rem, 1.2rem);
+    white-space: pre-wrap; 
+}
+
+@media screen and (min-width: 45rem) {
+    .resultBoxes {
+        width: 8rem;
+    }
+}
+
+@media screen and (min-width: 45rem) {
+    .resultBoxes {
+        width: 35rem;
+    }
+}
+
+/* width: clamp(8rem, 17rem, 20rem); */
+@media screen and (max-width: 20rem) {
+    .resultBoxes {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 30rem) {
+    .resultBoxes {
+        width: 85%;
+    }
+
+}

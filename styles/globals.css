@@ -4,23 +4,24 @@
 
 .box {
   display: flex;
-  width: clamp(4rem, 8rem, 14rem);
-  height: 10rem;
+  width: clamp(4rem, 7rem, 14rem);
+  height: 7rem;
 }
 
-.box, .title-animation {
+.box, .titleAnimation {
   animation: dropIn 1s ease forwards;
   animation-delay: calc(var(--order) * 100ms);
   transform: translateY(-30rem);
 }
 
-.title-animation {
+.titleAnimation {
+  display: inline-block;
   background-color: rgb(34, 32, 77);
   color: white;
   padding: clamp(0.5rem, 1.5rem, 2rem);
   text-align: center;
   transform: translateY(-30rem);
-  width: 90%;
+  max-width: 90%;
 }
 
 @keyframes dropIn {
@@ -104,3 +105,14 @@ a {
     background: black;
   }
 }
+
+@media screen and (max-width: 20rem) {
+
+  .box {
+      display: flex;
+      width: 30%;
+      height: 6rem;
+      font-size: 0.8rem;
+      /* word-wrap: break-word; */
+  }
+  }

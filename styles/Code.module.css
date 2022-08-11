@@ -5,11 +5,12 @@ explanation-item */
 .preEdited {
   display: flex;
   justify-content: center;
-  width:clamp(8rem, 17rem, 20rem); 
+  width:clamp(17rem, 20rem, 23rem); 
   border-radius: 0.4rem;
   padding: clamp(0.4rem, 2.5rem, 5rem);
   background-color: black;
   color: white;
+  margin: 0.8rem 1.5rem;
   font-size: clamp(0.4rem, 0.8rem, 1.2rem);
 }
   .explanationBox {
@@ -18,7 +19,7 @@ explanation-item */
     padding: 1rem;
   }
 
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 50rem) {
     .codeBlock {
       display: flex;
       justify-content: space-between;
@@ -27,4 +28,20 @@ explanation-item */
     }
 }
 
+@media screen and (max-width: 49.9rem) {
 
+.codeBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+@media screen and (max-width: 20rem) {
+  .preEdited {
+    width: 16rem;    
+    font-size: 0.7rem;
+    margin: 0.5rem;
+  }
+}
