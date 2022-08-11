@@ -31,10 +31,10 @@
 
 
 .navbarList {
+    margin-top: 0rem;
     background-color: rgb(212, 212, 218);
     /* width: 9.05rem; */
-    margin: 0rem 1.5rem;
-    padding: 0rem;
+    padding: 0rem;    
     justify-content: space-around;
     /* padding: 0.4rem 0.8rem; */
     font-size: clamp(0.4rem, 0.9rem, 1.2rem);
@@ -91,6 +91,10 @@
 }
 
 @media screen and (max-width: 44.9rem) {
+    .secondDivNavbar {
+        bottom: 1rem;
+        position: relative;
+    }
     .navbarHomeIcon {
         cursor: pointer;
         font-size: 0.8rem;
@@ -98,18 +102,21 @@
         border: none;
         background-color: transparent;
         width: 4rem;
+        order: -1;
     }
     .navbarTitle {
         font-weight: bolder;
     }
     .navbarTitleBox {
-        margin: 0rem 1.5rem;
+        padding: 0rem 0rem 0rem 1.5rem;
         background-color: rgb(212, 212, 218);
 
     }
     .navbarLinks {
-        top: 4rem;
+        top: 5rem;
+        right: 0rem;
         position: absolute;
+        width: 100%;
     }
 
     .navbarLinksHidden {

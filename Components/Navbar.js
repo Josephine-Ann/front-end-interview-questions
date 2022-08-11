@@ -34,7 +34,7 @@ const Navbar = () => {
                         <li onPointerEnter={() => setHoveredItem("orderAnimation")} onPointerLeave={() => setHoveredItem(null)} className={hoveredItem === "orderAnimation" || route === "/orderAnimation" ? styles.navbarLinkActive : styles.navbarLink}><Link href="orderAnimation">Using Order to Create an Animation</Link></li>
                     </ul>
                 </div>
-                <div onPointerEnter={() => setJsOpen(true)} onPointerLeave={() => setJsOpen(false)}>
+                <div className={styles.secondDivNavbar} onPointerEnter={() => setJsOpen(true)} onPointerLeave={() => setJsOpen(false)}>
                 <div className={styles.navbarTitleBox}>
                     <button className={styles.navbarTitle}>JS</button>
                 </div>
