@@ -58,7 +58,6 @@
   top: 100%;
   left: 0;
   right: 0;
-  width: clamp(23rem,23rem,23rem);
   height: clamp(3rem,3rem,3rem);
   margin-top: 0.3rem;
   padding: 0.3rem;
@@ -66,6 +65,7 @@
   border-radius: clamp(0.5rem, 0.5rem, 0.5rem);
 
 }
+
 
 h6:nth-of-type(2) {
   color: rebeccapurple;
@@ -114,5 +114,9 @@ a {
       height: 6rem;
       font-size: 0.8rem;
       /* word-wrap: break-word; */
+  }
+
+  [data-tooltip]:hover::after {
+    font-size: 2rem;
   }
   }
