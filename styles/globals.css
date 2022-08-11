@@ -113,10 +113,9 @@ a {
       width: 30%;
       height: 6rem;
       font-size: 0.8rem;
-      /* word-wrap: break-word; */
   }
 
-  [data-tooltip]:hover::after {
-    font-size: 2rem;
-  }
+    [data-tooltip]:hover::after {
+      font-size: 2rem;
+    }
   }

@@ -40,11 +40,13 @@
     font-size: clamp(0.4rem, 0.9rem, 1.2rem);
 }
 
+
+
 @media screen and (min-width: 45rem) {
     .navbarHomeIcon {
         cursor: pointer;
         font-size: clamp(1.4rem, 3rem, 3.5rem);
-        margin: 1.5rem 2rem;
+        margin: 0rem;
         border: none;
         background-color: transparent;
         width: 4rem;
@@ -78,19 +80,24 @@
 .navbarLink {
     font-size: clamp(0.4rem, 0.9rem, 1.2rem);
     background-color: rgb(212, 212, 218);
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem 1rem;
 }
 
 .navbarLinkActive {
     font-size: clamp(0.4rem, 0.9rem, 1.2rem);
     background-color: rgb(121, 121, 185);
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem 1rem;
 
 }
 
 @media screen and (max-width: 44.9rem) {
     .navbarHomeIcon {
-        display: none;
+        cursor: pointer;
+        font-size: 0.8rem;
+        margin: 0rem;
+        border: none;
+        background-color: transparent;
+        width: 4rem;
     }
     .navbarTitle {
         font-weight: bolder;
@@ -122,8 +129,7 @@
     }
 
     .navbar {
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-end;
     }
 

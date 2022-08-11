@@ -1,0 +1,29 @@
+.linkBox1 {
+    background-color: #69353F;
+}
+
+.linkBox2 {
+    background-color:#BA9790;
+}
+
+
+.linkBox3 {
+    background-color:#914d76;
+}
+
+.linkBox4 {
+    background-color: lightgoldenrodyellow;
+}
+
+.linkBox1, .linkBox2, .linkBox3, .linkBox4 {
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.listLinks {
+    min-width: 40%;
+    padding: 0rem;
+}
