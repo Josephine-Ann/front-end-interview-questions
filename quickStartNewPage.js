@@ -1,6 +1,6 @@
 // const displayName = "The use of order in an animation";
-const codeNameUpperCase = "FloatsIndex";
-const codeNameLowerCase = "floatsIndex";
+const codeNameUpperCase = "NullVersusUndefined";
+const codeNameLowerCase = "nullVersusUndefined";
 
 function createPage () {
     console.log(
@@ -15,3 +15,4 @@ function createPage () {
 }
 
 createPage()
+

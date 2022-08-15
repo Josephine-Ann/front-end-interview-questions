@@ -8,28 +8,28 @@ const Floats = () => {
         `If we assign "float: left;" to every item, they stack right.`,
         `If we assign "float: right;" to every item, they stack left.`,
     ]
-    const code = [
-        `
-            .boxFloatedLeft {
-                float: left;
-                width: 20%;
-                height: 10rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .boxFloatedRight {
-                float: right;
-                width: 20%;
-                height: 10rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transform: scaleX(-1);
-            }
-        `
-    ]
+    const code = {
+        css: `
+        .boxFloatedLeft {
+            float: left;
+            width: 20%;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .boxFloatedRight {
+            float: right;
+            width: 20%;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: scaleX(-1);
+        }
+    `
+    }
     return (
         <Layout>
             <div className={styles.boxOfBoxes}>

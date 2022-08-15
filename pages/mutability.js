@@ -3,14 +3,14 @@ import Layout from '../Components/Layout';
 import Code from '../Components/Code'; 
 import styles from '../styles/Mutability.module.css';
 
-const code1 = [
-    `
+const code1 = {
+    js: `
     let free = "free";
     const arrEx = [1,2,3,4,5];
     Array.prototype.writeWoo = () => "wooooo";
     String.prototype.writeWoo = () => "wooooo";
     `
-]
+}
 
 const explanation1 = [
     `We have applied a method to the prototype of the array.`,
@@ -18,30 +18,30 @@ const explanation1 = [
     `If immutability is about prototype, this will have a different effect on either data type.`
 ]
 
-const code2 = [
-    `free = "Tree"`
-]
+const code2 = {
+    js: `free = "Tree"`
+}
 
 const explanation2 = [
     `We try re-assigning the free variable.`
 ]
 
-const code3 = [
-    `free[0] = "W"`,
-    `arrEx[0] = "W"`
-]
+const code3 = {
+    js: `free[0] = "W"`,
+    js: `arrEx[0] = "W"`
+}
 
 const explanation3 = [
     `We try re-writing the first index, similarly to how we originally read it above.`
 ]
 
-const code4 = [
-    `    
+const code4 = {
+    js: `    
     const arrEx = [1,2,3,4,5];
     const yikes = arrEx
     arrEx.push(9)
-    `,
-]
+    `
+}
 
 const explanation4 = [
     `We have our original array`,
@@ -49,13 +49,13 @@ const explanation4 = [
     `We push onto our original array. What will happen to 'yikes'?`
 ]
 
-const code5 = [
-    `
-    const arrEx = [1,2,3,4,5]
-    const thatsBetter = [...arrEx]
-    arrEx.push(100000)
-    `,
-]
+const code5 = {
+    js: `
+const arrEx = [1,2,3,4,5]
+const thatsBetter = [...arrEx]
+arrEx.push(100000)
+`
+}
 
 const explanation5 = [
     `We have our original array`,

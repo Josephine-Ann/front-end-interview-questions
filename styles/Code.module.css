@@ -3,34 +3,44 @@ explanationBox
 explanation-item */
 
 .preEdited {
-  display: flex;
-  justify-content: center;
   width:clamp(17rem, 20rem, 23rem); 
-  border-radius: 0.4rem;
-  padding: clamp(0.4rem, 2.5rem, 5rem);
-  background-color: black;
-  color: white;
   margin: 0.8rem 1.5rem;
-  font-size: clamp(0.4rem, 0.8rem, 1.2rem);
 }
   .explanationBox {
-    width: clamp(5rem, 14rem, 20rem);    
     font-size: clamp(0.4rem, 0.8rem, 1.2rem);  
     padding: 1rem;
+    max-width: 90%;
+  }
+  @media screen and (max-width: 30rem) {
+    .explanationBox {
+      width: 70%; 
+      text-align: center;
+    }  
   }
 
-  @media screen and (min-width: 50rem) {
+  @media screen and (min-width: 50rem) and (max-width: 61.9rem) {
     .codeBlock {
       display: flex;
-      justify-content: space-between;
-      width: clamp(45rem, 55rem, 55rem);
+      max-width: 90%;
       padding: 2rem 2rem;
-    }
+      flex-direction: column;
+      align-items: center;
+  }
+}
+@media screen and (min-width: 62rem) and (orientation: landscape)  {
+  .codeBlock {
+    display: flex;
+    max-width: 80%;
+    padding: 2rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 49.9rem) {
 
 .codeBlock {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

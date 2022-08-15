@@ -3,29 +3,29 @@ import Layout from '../Components/Layout';
 import styles from '../styles/Floats2.module.css'
 import Code from '../Components/Code';
 
-const code = [
-    `
-        .childThree {
-            background-color: lightseagreen;
-            float: left;
-        }
-        
-        .childFour {
-            background-color: orchid;
-            float: right;
-        }
-    `,
-    `
-        <div className={${"`${styles.withFloatDemo}`}"}>
-            <div className={${"`${styles.childrenWithFloat} ${styles.childThree}`"}}>
-                <p className={styles.divDescription}>I am the first div, floated left</p>
-            </div>
-            <div className={${"`${styles.childrenWithFloat} ${styles.childFour}`"}}>
-                <p className={styles.divDescription}>I am the second div, floated right</p>
-            </div>
+const code = {
+    css: `
+    .childThree {
+        background-color: lightseagreen;
+        float: left;
+    }
+    
+    .childFour {
+        background-color: orchid;
+        float: right;
+    }
+`,
+jsx: `
+    <div className={${"`${styles.withFloatDemo}`}"}>
+        <div className={${"`${styles.childrenWithFloat} ${styles.childThree}`"}}>
+            <p className={styles.divDescription}>I am the first div, floated left</p>
         </div>
-    `
-]
+        <div className={${"`${styles.childrenWithFloat} ${styles.childFour}`"}}>
+            <p className={styles.divDescription}>I am the second div, floated right</p>
+        </div>
+    </div>
+`
+}
 
 const explanation = [
     `In our first box, we see two divs behaving as they do by default.`,

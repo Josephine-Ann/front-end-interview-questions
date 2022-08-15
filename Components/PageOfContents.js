@@ -8,7 +8,7 @@ const PageOfContents = ({links}) => {
                 {
                     links.map((l, i) => {
                         return (
-                            <li className={styles[`linkBox${i+1}`]}><Link href={l[0]} key={i+1}>{l[1]}</Link></li>
+                            <li key={i+1} className={styles[`linkBox${i+1}`]}><Link href={l[0]} key={i+1}>{l[1]}</Link></li>
                         )
                     })
                 }
@@ -17,3 +17,7 @@ const PageOfContents = ({links}) => {
 };
 
 export default PageOfContents;
+
+{/* <SyntaxHighlighter key={index + 1} className={`${styles.preEdited}`} language={[key]} style={dracula}>
+{code[key]}
+</SyntaxHighlighter> */}

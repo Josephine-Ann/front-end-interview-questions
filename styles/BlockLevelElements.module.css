@@ -5,6 +5,7 @@
 .blockLevelSection {
     width: 100%;
     padding-left: 2rem;
+    padding-bottom: 2rem;
 }
 
 .blockLevelH2 {
@@ -35,6 +36,7 @@
     width: clamp(10rem, 10rem, 10rem);
     position: relative;
     padding-top: 50%;
+    margin-bottom: 2rem;
     border: 1rem solid rebeccapurple;
 }
 

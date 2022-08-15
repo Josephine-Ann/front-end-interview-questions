@@ -10,11 +10,17 @@
 }
 
 .hoveredButtonSection {
-    height: clamp(15rem,10rem,10rem);
+    height: 10rem;
 }
 
 @media screen and (max-width: 20rem) {
     .hoveredButton {
       width: 15rem; 
     }
+  }
+
+  @media screen and (max-width: 30rem) {
+    .hoveredButtonSection {
+      height: 13rem;
+  }
   }

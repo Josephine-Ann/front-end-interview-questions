@@ -11,8 +11,9 @@ const explanation = [
     `This means we don't have to pass down different, repetitive delays down into these animated elements.`
 ]
 
-const code = [
-    `.box, .title-animation {
+const code = {
+    
+    css: `.box, .title-animation {
         animation: dropIn 1s ease forwards;
         animation-delay: calc(var(--order) * 100ms);
         transform: translateY(-30rem);
@@ -30,7 +31,7 @@ const code = [
         from {transform: translateY(-30rem);}
         to {transform: translateY(5rem);}
       }`,
-    `
+    jsx: `
     <h3 className="title-animation" style={{ "--order": 5}}>The Request-Response Model/Client-Server Architecture</h3>
     <div className={styles.animationBoxes}>
         <div style={{ "--order": 1}} className={${"`${styles.firstBox} box`"}}>
@@ -51,7 +52,7 @@ const code = [
         </div>
     </div>
     `
-]
+}
 
 const OrderAnimation = () => {
     return (

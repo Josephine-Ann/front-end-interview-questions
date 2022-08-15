@@ -21,8 +21,8 @@ const explanationBlockLevelInlineApplied = [
     "They no longer extend across the entire page."
 ]
 
-const codeBlockLevel = [
-    `
+const codeBlockLevel = {
+    css: `
     .blockLevelSection {
         width: 100%;
         padding-left: 2rem;
@@ -40,17 +40,17 @@ const codeBlockLevel = [
         padding: 1rem; 
     }
     `,
-    `
+    jsx: `
     <div className={styles.blockLevelSection}>
         <h1>Block Level Elements</h1>
         <h2 className={styles.blockLevelH2}>I am an H1</h2>
         <p className={styles.blockLevelP}>I am a paragraph</p>
     </div>  
     `
-]
+}
 
-const codeInlineLevel = [
-    `
+const codeInlineLevel = {
+    css: `
     .imgWrapper {
         height: auto;
         width: clamp(10rem, 10rem, 10rem);
@@ -63,28 +63,28 @@ const codeInlineLevel = [
         background-color: lightpink;
     }
     `,
-    `
+    jsx: `
     <span className={styles.inlineLevelSpan}>I am a span</span>
     <ImgWrapper>
         <Image src={imgExample} layout="fill" />
     </ImgWrapper>
     `
-]
+}
 
-const codeBlockLevelInlineApplied = [
-    `
+const codeBlockLevelInlineApplied = {
+    css: `
     .inlineSetting {
         display: inline-block;
     }
     `,
-    `
-    <div className="blockLevelSection">
+    jsx: `<div className="blockLevelSection">
         <h1>Block Level Elements</h1>
         <h2 className=${"`${styles.blockLevelH2} ${styles.blockLevelH2}`"}>I am an H1</h2>
         <p className=${"`${styles.blockLevelP} ${styles.blockLevelH2}`"}>I am a paragraph</p>
     </div>  
     `
-]
+}
+
 
 
 const BlockLevelElements = () => {

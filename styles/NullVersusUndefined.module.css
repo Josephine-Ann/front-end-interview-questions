@@ -1,0 +1,38 @@
+.explanations {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.explanation {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 0.8rem;
+}
+
+.resultBoxes {
+    padding: 1.5rem 1rem;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 0.4rem;
+    margin: 1rem 0.5rem;
+    font-size: clamp(0.4rem, 0.8rem, 1.2rem);
+    white-space: pre-wrap; 
+}
+
+.paragraphsExplaining {
+    width: 90%;
+    font-size: 0.8rem;
+    margin: 0.4rem;
+}
+
+@media screen and (max-width: 30rem) {
+    .explanation {
+        font-size: 1.2rem;
+    }
+    .paragraphsExplaining {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    
+}

@@ -10,17 +10,17 @@ const Nth = () => {
         setChildOrType(prevChildOrType => prevChildOrType === "type" ? "child" : "type" )
     }
 
-    const code = [
-        `
-            h6:nth-of-type(2) {
-                color: rebeccapurple;
-            }
-            
-            h5:nth-child(2) {
-                color: rebeccapurple;
-            }
-        `
-    ]
+    const code = {
+        css: `
+        h6:nth-of-type(2) {
+            color: rebeccapurple;
+        }
+        
+        h5:nth-child(2) {
+            color: rebeccapurple;
+        }
+    `
+    }
     
     const explanationType = [
         "We use nth-of-type on the 2nd h6",

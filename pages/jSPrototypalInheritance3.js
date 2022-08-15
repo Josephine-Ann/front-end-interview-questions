@@ -3,27 +3,28 @@ import Layout from '../Components/Layout';
 import Code from '../Components/Code'; 
 import styles from '../styles/JSPrototypalInheritance3.module.css';
 
-const code = [
-    `class Pet {
-        constructor(animal) {
-          this.animal = animal;
-        }
-        intro() {
-          return 'I have a pet ' + this.animal;
-        }
-      }`,
-      `
-      class Breed extends Pet {
-        constructor(animal, breed) {
-          super(animal);
-          this.breed = breed;
-        }
-        introWithBreed() {
-          return this.intro() + ', it is a ' + this.breed;
-        }
-      }
-      `
-]
+const code = {
+  
+  js: `class Pet {
+    constructor(animal) {
+      this.animal = animal;
+    }
+    intro() {
+      return 'I have a pet ' + this.animal;
+    }
+  }`,
+  js: `
+  class Breed extends Pet {
+    constructor(animal, breed) {
+      super(animal);
+      this.breed = breed;
+    }
+    introWithBreed() {
+      return this.intro() + ', it is a ' + this.breed;
+    }
+  }
+  `
+}
 
 const explanation = [
     `We create a class constructor.`,

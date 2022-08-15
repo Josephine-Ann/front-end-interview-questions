@@ -3,8 +3,8 @@ import Layout from '../Components/Layout';
 import Code from '../Components/Code'; 
 import styles from '../styles/JSPrototypalInheritance2.module.css';
 
-const code = [
-    `const objExample = {
+const code = {
+    js: `const objExample = {
         a: "1",
         b: "2",
         c: "3"
@@ -13,7 +13,7 @@ const code = [
     const secondObjExample = Object.create(objExample)
     secondObjExample.ownValue = 'Created second'
     `
-]
+}
 
 const explanation = [
     `We have an example of an object.`,

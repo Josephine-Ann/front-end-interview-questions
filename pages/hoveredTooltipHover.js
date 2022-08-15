@@ -3,13 +3,13 @@ import Layout from '../Components/Layout';
 import Code from '../Components/Code';
 import styles from '../styles/HoveredTooltip.module.css';
 
-const code = [
-    `
+const code = {
+    jsx: `
     <button data-tooltip="I am a tooltip" className={styles.hoveredButton}>
         Please hover over me! 💜💜💜
     </button>
     `,
-    `
+    css: `
     [data-tooltip] {
         position: relative;
       }
@@ -31,7 +31,7 @@ const code = [
         border-radius: clamp(0.5rem, 0.5rem, 0.5rem);
       }
     `
-]
+}
 
 const explanation = [
     'We set the data tooltip in our html, jsx, etc.',

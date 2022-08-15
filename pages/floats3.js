@@ -17,8 +17,8 @@ const explanationC = [
     "The text wraps up around the left of the image"
 ]
 
-const codeB = [
-    `
+const codeB = {
+    css: `
     .imgWrapperLeft {
         float: left;
         width: 12rem;
@@ -28,15 +28,15 @@ const codeB = [
         margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     }
     `,
-    `
+    jsx: `
     <PhotoWrapperLeft>
         <Image src={imgExampleFloatedLeft} alt="dummy image with text explaining that it is an image floated left" layout="fill"/>  
     </PhotoWrapperLeft>
     `
-]
+}
 
-const codeC = [
-    `.imgWrapperRight {
+const codeC = {
+    css: `.imgWrapperRight {
         float: right;
         width: 12rem;
         height: 12rem;
@@ -45,12 +45,12 @@ const codeC = [
         margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     }
     `,
-    `
+    jsx: `
     <PhotoWrapperRight>
         <Image src={imgExampleFloatedRight} alt="dummy image with text explaining that it is an image floated left" layout="fill"/>
     </PhotoWrapperRight>
     `
-]
+}
 
 
 const Floats3 = () => {

@@ -46,7 +46,7 @@
     .navbarHomeIcon {
         cursor: pointer;
         font-size: clamp(1.4rem, 3rem, 3.5rem);
-        margin: 0rem;
+        margin: 1.2rem;        
         border: none;
         background-color: transparent;
         width: 4rem;

@@ -3,8 +3,8 @@ import Layout from '../Components/Layout';
 import Code from '../Components/Code'; 
 import styles from '../styles/JSPrototypalInheritance.module.css';
 
-const code = [
-    `const arrExample = [1,2,3,4,5,6,7]
+const code = {
+    jsx: `const arrExample = [1,2,3,4,5,6,7]
     const objExample = {
         a: "1",
         b: "2",
@@ -12,10 +12,12 @@ const code = [
     }
     const strExample = "I am a string"
     const hasArrMethodForEach = obj => obj.__proto__.forEach ? "I have forEach on my proto, I'm an instantiation of the array constructor." : "I don't have forEach on my proto, I'm not an instantiation of the array constructor"`
-]
 
-const code2 = [
-    `const arrExample = [1,2,3,4,5,6,7]
+}
+
+const code2 = {
+
+    js: `const arrExample = [1,2,3,4,5,6,7]
     const objExample = {
         a: "1",
         b: "2",
@@ -23,10 +25,11 @@ const code2 = [
     }
     const strExample = "I am a string"
     const hasStrMethodBold = str => str.__proto__.bold ? "I have bold on my proto, I'm a string." : "I don't have bold on my proto, I'm not a string."`
-]
 
-const code3 = [
-    `
+}
+
+const code3 = {
+    js: `
     const arrExample = [1,2,3,4,5,6,7]
     const objExample = {
         a: "1",
@@ -43,7 +46,8 @@ const code3 = [
     "Found hasOwnProperty, I'm an object." : 
     "Maybe I'm...still an object!?"
     `
-]
+
+}
 
 const explanation = [
     `Everything data type has a proto`,
@@ -69,7 +73,7 @@ const jSPrototypalInheritance = () => {
     return (
         <Layout>
             <Code code={code} explanation={explanation}/>
-            <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+            <div style={{display: "flex", flexDirection: "column", alignItems: "center", maxWidth: "80%"}}>
                 <pre className={styles.resultBoxes}>
                     hasArrMethodForEach(arrExample)
                     <p>{`👉🏻 I have forEach on my proto, I'm an instantiation of the array constructor.`}</p>
