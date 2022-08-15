@@ -66,19 +66,33 @@ const NullVersusUndefined = () => {
                 prototype chain and come up empty.
             </p>
             <Code code={code} explanation={explanation}/>
-            <pre className={styles.resultBoxes}>
-            {`isMethodOnArrayPrototype("forEach")`}
-                <p>{`👉🏻 You found me!`}</p>
-            </pre>
-            <pre className={styles.resultBoxes}>
-            {`isMethodOnArrayPrototype("someMadeUpMethod")`}
-                <p>{`👉🏻 undefined`}</p>
-            </pre>
-            <pre className={styles.resultBoxes}>
-            {`Array.prototype.someMadeUpMethod = () => "a thing to return"`}
-            {`isMethodOnArrayPrototype("someMadeUpMethod")`}
-                <p>{`👉🏻 You found me!`}</p>
-            </pre>
+            <Code code={{
+                js:`isMethodOnArrayPrototype("forEach")
+                // "👉🏻 You found me!"
+                `
+                }}
+                explanation={[
+                    "We confirm that the array constructor has the method forEach"]}
+                />
+                    <Code code={{
+                js: `isMethodOnArrayPrototype
+                ("someMadeUpMethod")
+                // 👉🏻 undefined
+                `
+                }}
+                explanation={[
+                    "We confirm that the array constructor doesn't have the method someMadeUpMethod"]}
+                />
+                                            <Code code={{
+                js: `Array.prototype.someMadeUpMethod = () => "a thing to return"
+                isMethodOnArrayPrototype(
+                    "someMadeUpMethod")
+                    // 👉🏻 You found me!
+                `
+                }}
+                explanation={[
+                    "We confirm that the array constructor doesn't have the method someMadeUpMethod"]}
+                />
             <p className={styles.paragraphsExplaining}>
                 So that means you should not be able to set something as undefined, right?
                 It is only implicit. 
